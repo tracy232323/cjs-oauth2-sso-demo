@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Purple Admin</title>
+
+  <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/bootstrap-4.3.1-dist/css/bootstrap.min.css}">
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header" >
+            <h5 class="page-title">
+<!--                当前登录用户：<span th:text="${#authentication.name}"></span> | <a th:href="@{/logout}">退出</a>-->
+                当前登录用户：<span>涂刚</span> | <a href="/logout">退出</a>
+            </h5>
+          </div>
+          <div class="row">
+            <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                    <h2 class="mb-5"><a href="http://localhost:8082/memberSystem/member/list" style="color: white">用户管理</a></h2>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 stretch-card grid-margin">
+              <div class="card bg-gradient-info card-img-holder text-white">
+                <div class="card-body">
+                  <img src="images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                  <h2 class="mb-5"><a href="http://localhost:8083/orderSystem/order/list" style="color: white">资源管理</a></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 stretch-card grid-margin">
+              <div class="card bg-gradient-success card-img-holder text-white">
+                <div class="card-body">
+                  <img src="images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                  <h2 class="mb-5">营销管理</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+
+</body>
+
+</html>

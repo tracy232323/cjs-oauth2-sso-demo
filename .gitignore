@@ -1,0 +1,16 @@
+# IntelJ
+*.iml
+.idea/**
+target/
+
+# Eclipse
+**/.settings
+**/.classpath
+**/.project
+
+# docker
+**/docker/*.jar
+
+# log
+**/*.log
+logs/**
