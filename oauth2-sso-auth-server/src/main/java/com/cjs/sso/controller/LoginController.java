@@ -20,4 +20,9 @@ public class LoginController {
         return "index";
     }
 
+    @GetMapping("/demo")
+    public String demo() {
+        return "demo";
+    }
+
 }
